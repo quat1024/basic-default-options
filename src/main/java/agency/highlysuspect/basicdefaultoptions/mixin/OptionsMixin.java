@@ -18,7 +18,10 @@ public class OptionsMixin {
 	@Shadow @Final private File optionsFile;
 	@Unique private File defaultOptionsFile;
 	
-	@Inject(method = "<init>", at = @At("TAIL"))
+	@Inject(method = "<init>", at = @At(
+		value = "INVOKE", //BeforeInvoke
+		target = "Lnet/minecraft/client/Options;load()V"
+	))
 	private void onInit(Minecraft minecraft, File file, CallbackInfo ci) {
 		defaultOptionsFile = new File(file, "defaultoptions.txt");
 	}
