@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "basicdefaultoptions",
+  "version": "${version}",
+
+  "name": "Basic Default Options",
+  "description": "If defaultoptions.txt exists, it will be be copied to create the default options.txt file",
+  "authors": [
+    "quaternary"
+  ],
+  "contact": {
+    "homepage": "https://github.com/quat1024/basic-default-options"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/basicdefaultoptions/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+  },
+  "mixins": [
+    "basicdefaultoptions.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "~1.18.2"
+  }
+}

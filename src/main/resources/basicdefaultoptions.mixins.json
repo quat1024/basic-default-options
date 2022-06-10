@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "agency.highlysuspect.basicdefaultoptions.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "OptionsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
